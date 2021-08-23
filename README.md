@@ -6,7 +6,7 @@
 - Todo list with CRUD functions
 - Filter by status: All/Completed/Active
 - Counter for each status. All: `3 active items / 10 items`; Completed: `7 completed items / 10 items`, Active: `3 active items / 10 items`.
-- Bonus (Optional): Add timing for each Items. Notify when it nearly the deadline (before deadline 1h)
+- Add timing for each Items. Notify when it nearly the deadline (before deadline 1h)
 
 
 ## Available Scripts
