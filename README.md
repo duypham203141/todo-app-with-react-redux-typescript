@@ -1,53 +1,13 @@
-# Project Rule
 
-1. Daily report on Komu before 10am
-2. Create Pull Request for merging. DON'T push into `master` branch and `timesheet-tutorial` directly.
 
 # TODO App 
-## Requirement
 
-1. Create a powerful Todo app with React and Typescript
 
 - Todo list with CRUD functions
 - Filter by status: All/Completed/Active
 - Counter for each status. All: `3 active items / 10 items`; Completed: `7 completed items / 10 items`, Active: `3 active items / 10 items`.
 - Bonus (Optional): Add timing for each Items. Notify when it nearly the deadline (before deadline 1h)
 
-2. Should has great UI
-3. Integrate with BE (Can reuse [Placeholder](https://jsonplaceholder.typicode.com/) or create your own BE by using [mockend](https://mockend.com/))
-4. Recommend Library 
-- Redux basic (Without Redux toolkit to understand the main idea of Redux)
-- Axios (Create axios instance)
-
-## [NCC React basic checklist](https://nccasia.github.io/ncc-react-basic/)
-
-https://nccasia.github.io/ncc-react-basic/
-
-## [How to Write Cleaner React Code](https://www.freecodecamp.org/news/how-to-write-cleaner-react-code/)
-
-https://www.freecodecamp.org/news/how-to-write-cleaner-react-code/
-
-## Working Process
-
-1. Create new branch from master
-
-```
-git checkout -b your-full-name
-```
-
-2. Push your branch to remote
-
-```
-git push origin your-full-name
-```
-
-3. Create new branch depend on your working feature
-
-```
-git checkout -b feature/your-feature
-```
-
-4. Commit your change, after that push your working feature to remote. Finally Create Pull Request to merge `your-feature` branch into `your-full-name` branch.
 
 ## Available Scripts
 
