@@ -1,0 +1,117 @@
+@import "../../scss/variables.scss";
+.todoItem {
+  margin: 8px;
+  padding: 0px 0;
+  position: relative;
+  min-height: 50px;
+  display: flex;
+  border-radius: 4px;
+  background-color: $background-color-tag;
+  overflow: hidden;
+  align-items: center;
+  animation: fadeIn linear 0.2s;
+
+  &:hover {
+    background-color: $background-color-tag-hover;
+    & .todoItem__title-name {
+      -webkit-line-clamp: 10000;
+      --growth-from: 0.7;
+      --growth-to: 1;
+      animation: showALl linear 0.2s;
+      padding: 4px 0;
+      padding-right: 100px;
+    }
+    & .todoItem__icon-edit {
+      display: block;
+    }
+    & .todoItem__icon-del {
+      display: block;
+    }
+  }
+}
+.todoItem__title {
+  flex: 1;
+  text-align: left;
+  margin: auto 10px auto 5px;
+  color: $text-color;
+  line-height: 20px;
+}
+
+.todoItem__title-name {
+  display: inline-block;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.todoItem__title-deadline {
+  color: rgb(104, 104, 104);
+}
+
+.todoItem__title_deadline_warring {
+  color: $white-color;
+  display: inline-block;
+  background-color: $dengers-color;
+  margin: 4px 0;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.todoItem__title_cpl {
+  text-decoration: line-through;
+  color: rgb(181, 181, 181);
+}
+
+.icon {
+  color: $white-color;
+  font-size: 1.2rem;
+}
+.todoItem__icon-edit {
+  --growth-from: 0.8;
+  --growth-to: 1;
+  display: none;
+  height: 100%;
+  padding: 0 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: $primary-color;
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  right: 44px;
+  animation: growth linear 0.2s;
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+}
+.todoItem__icon-del {
+  --growth-from: 0.8;
+  --growth-to: 1;
+  height: 100%;
+  padding: 0 13px;
+  cursor: pointer;
+  display: none;
+  border-radius: 4px;
+  background-color: $dengers-color;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  animation: growth linear 0.2s;
+  &:hover {
+    background-color: $dengers-color-hover;
+  }
+}
+
+@keyframes showALl {
+  from {
+    transform: scaleY(var(--growth-from));
+  }
+  to {
+    transform: scaleY(var(--growth-to));
+  }
+}
